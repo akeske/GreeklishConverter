@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane cacheShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.73" prefHeight="200.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="buttonUploadFile" layoutX="9.0" layoutY="14.0" mnemonicParsing="false" onAction="#uploadFile" text="Open file" />
+      <Label fx:id="labelFullConvert" layoutX="14.0" layoutY="100.0" onMousePressed="#copy2clipboardFull" text="">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="labelActiveDirecotryConvert" layoutX="14.0" layoutY="140.0" onMousePressed="#copy2clipboardAD" text="">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="labelFile" layoutX="91.0" layoutY="19.0" text="" />
+      <TextField fx:id="textName" layoutX="10.0" layoutY="60.0" onKeyReleased="#changeLabels" prefHeight="26.0" prefWidth="254.0" />
+      <TextField fx:id="textDelimiter" layoutX="238.0" layoutY="14.0" onKeyReleased="#changeLabels" prefHeight="1.0" prefWidth="30.0" promptText=";" text=";" />
+      <Label fx:id="labelMe" layoutX="127.0" layoutY="178.0" text="Athanasios Keskempes" />
+      <Label fx:id="labelFile1" layoutX="168.0" layoutY="19.0" prefHeight="16.0" prefWidth="71.0" text="Delimiter" />
+   </children>
+</AnchorPane>
